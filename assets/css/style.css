@@ -17,7 +17,7 @@ body {
     height: 100000px;
 }
 
-/* Common */
+/* ========== Common ========== */
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -140,8 +140,6 @@ a {
 }
 /* Header Top */
 .header-top {
-    position: sticky;
-    top: 0;
     background: var(--header-bg);
     display: flex;
     align-items: center;
