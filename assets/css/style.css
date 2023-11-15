@@ -261,8 +261,7 @@ a {
 
 /* ========== Services ========== */
 .services {
-    padding: 20px 0;
-    margin-top: 150px;
+    margin: 170px 0;
 }
 
 .services__desc,
@@ -272,7 +271,7 @@ a {
 
 .services__desc {
     width: 468px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     margin-top: 18px;
 }
 
@@ -293,19 +292,25 @@ a {
 /* Services Item */
 .services-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    width: 470px;
     padding: 21px 22px 20px;
+    background: #fff;
+    transition: 0.25s;
+    border-radius: 10px;
 }
 
 .services-item:hover {
     color: white;
-
-    .services-item__icon {
-        background: #2e80ce;
-    }
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05);
+    position: relative;
 }
 
-.services-item__icon {
+.services-item:hover .services-item__icon-wrap {
+    background: #2e80ce;
+}
+
+.services-item__icon-wrap {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -314,7 +319,7 @@ a {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
-    transition: 0.35s;
+    transition: 0.25s;
 }
 
 .services-item__info {
@@ -326,6 +331,7 @@ a {
     color: #10375c;
     font-size: 1.8rem;
     font-weight: 600;
+    line-height: 1.27;
     line-height: normal;
 }
 
@@ -335,4 +341,64 @@ a {
 
 .services__btn {
     margin-top: 55px;
+}
+
+/* ========== Work ========== */
+.work {
+    padding: 100px 0;
+    margin-top: 150px;
+    background: #f6fbff;
+}
+
+.work__desc {
+    margin-top: 18px;
+    width: 468px;
+}
+
+.work__list {
+    margin-top: 86px;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.work-item {
+    padding: 43px 42px;
+    border-radius: 4px;
+    border: 16px solid #eaf6ff;
+    transition: 0.25s;
+}
+
+.work-item:hover {
+    border-color: #2e80ce;
+    transform: translateY(-16px);
+}
+
+.work-item__heading {
+    margin-top: 18px;
+    color: #10375c;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38px; /* 138.462% */
+}
+
+.work-item__desc {
+    margin-top: 28px;
+}
+
+.work-item__more {
+    color: #2e80ce;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75; /* 175% */
+    margin-top: 18px;
+}
+
+.work-item:hover .work-item__more {
+    font-weight: 400;
+}
+
+.work-item__more:hover {
+    text-decoration: underline;
 }
