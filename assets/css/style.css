@@ -270,7 +270,8 @@ a {
 
 /* ========== Services ========== */
 .services {
-    margin: 170px 0;
+    padding: 85px 0;
+    margin-top: 85px;
 }
 
 .services__desc,
@@ -354,8 +355,7 @@ a {
 
 /* ========== Work ========== */
 .work {
-    padding: 100px 0;
-    margin-top: 150px;
+    padding: 85px 0;
     background: #f6fbff;
 }
 
@@ -414,7 +414,7 @@ a {
 
 /* ========== Fearues ========== */
 .features {
-    padding: 170px 0;
+    padding: 85px 0;
 }
 
 .features__row {
@@ -424,6 +424,7 @@ a {
 
 .features__media {
     position: relative;
+    height: 491px;
 }
 
 .features__img {
@@ -454,4 +455,83 @@ a {
 
 .features__btn {
     margin-top: 38px;
+}
+
+/* Virtual */
+
+.members {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.members__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+.members__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+.members-item__img-bg {
+    overflow: hidden;
+    padding-top: 28px;
+    border-radius: 6px;
+    background: #eaf6ff;
+}
+
+.members-item__img {
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.members-item__name {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.75; /* 175% */
+    margin-top: 12px;
+}
+
+.members-item__desc {
+    color: #575f66;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.85; /* 185.714% */
+}
+
+.members__controls {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 38px;
+}
+
+.members__control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #575f66;
+    width: 36px;
+    height: 36px;
+    border: 1px solid currentColor;
+    outline: none;
+    border-radius: 50%;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.members__control-btn:hover {
+    color: #fff;
+    background: #2e80ce;
+    border-style: #2e80ce;
+    cursor: pointer;
 }
