@@ -543,7 +543,7 @@ a {
 
 /* ========== Install ========== */
 .install {
-    padding: 85px 0;
+    padding: 180px 0 85px;
 }
 
 .install__inner {
@@ -580,11 +580,4 @@ a {
     display: flex;
     gap: 28px;
     margin-top: 38px;
-}
-
-.install__btn {
-    outline: none;
-    border: none;
-    padding: 0;
-    background: transparent;
 }
