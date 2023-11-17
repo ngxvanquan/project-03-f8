@@ -490,6 +490,11 @@ a {
     max-width: 100%;
     height: 290px;
     object-fit: cover;
+    transition: 0.25s;
+}
+
+.members-item:hover .members-item__img {
+    transform: scale(1.2);
 }
 
 .members-item__name {
